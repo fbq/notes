@@ -12,3 +12,8 @@ with the specific commit(when):
 * where - `path` in .gitmodule files.
 * when - a special __file__ object in the super projects, which has the commit SHA1 of 
   the submodules.
+
+## How to track a branch of a submodule?
+
+`-b <branch>` option in `git submodule add`, will add `branch` in .gitmodule file,
+which affect the behavior of `git submodule update --remote`.
